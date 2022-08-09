@@ -1,0 +1,58 @@
+/* Se utiliza # para id's */
+#titulo {
+    color: darkgreen;
+}
+
+/* Se utiliza . para clases (class) */
+.texto{
+    color: blueviolet;
+}
+
+p.texto{
+    color: darkblue;
+}
+
+p.especial{
+    color: orange;
+}
+
+div p {
+    color: aquamarine;
+}
+
+div h2, div h3 {
+    color: brown;
+}
+
+*{
+    background-color: lightyellow;
+}
+/*
+.color {
+    color: #888
+}*/
+.color {
+    /* border: 5px black double; */
+    /*
+        dotted
+        dashed
+        solid
+        double
+
+        *Tridimensionales
+            groove
+            ridge
+            inset
+            outset
+        none
+        hidden
+    */
+    border-style: solid;
+    border-color: coral;
+    border-radius: 10px;
+    border-width: 5px;
+}
+
+
+
+/* Esto es un comentario */
