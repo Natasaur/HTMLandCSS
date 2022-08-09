@@ -24,9 +24,9 @@ div h2, div h3 {
     color: brown;
 }
 
-*{
-    background-color: lightyellow;
-}
+/**{
+    background-image: url('E:\\Mis cosas\\VS Code\\HTMLandCSS\\img\\Offline_screen.png');
+ }*/ 
 /*
 .color {
     color: #888
@@ -53,6 +53,49 @@ div h2, div h3 {
     border-width: 5px;
 }
 
+#fondo {
+    /* background-color: rgba(0,0,0,0.1); */
+    height: 500px;
+    background-image: url('E:\\Mis cosas\\VS Code\\HTMLandCSS\\img\\Offline_screen.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
 
+.margen {
+    background-color: chocolate;
+    margin: 20px;
+    padding: 20px;
+    border: solid 3px solid black;
+    height: 100px;
+    width: 100px;
+    overflow: scroll;
+    outline: 3px solid black;
+}
 
+.text{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    text-decoration: line-through;
+    text-shadow: 3px 5px 5px blue;
+}
+
+/* Cuando el link no ha sido visitado */
+a:link{
+    color: blueviolet;
+}
+
+/* Links que ya han sido visitados */
+a:visited {
+    color: gray;
+}
+
+/* Cuando se pasa el cursor por encima */
+a:hover{
+    color: yellow;
+}
+/* Cuando se da click en el link */
+a:active {
+    color: red;
+}
 /* Esto es un comentario */
