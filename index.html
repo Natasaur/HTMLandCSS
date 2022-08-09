@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        table, th, td{
+            border: 3px solid black;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendiendo HTML</title>
 </head>
 <body>
+    <!-- No sé para que puse las estiquetas de section -->
     <section>
         <h1>¿Qué es HTML?</h1>
         <p>Hyper Text Markup Language</p>
-        <p>Es el lenguaje estandar para crear paginas web.
-        Describe la estructura
-        Le indica al explorador que y como mostrarlo
-        Consiste de etiquetas
-        Las etiquetas indican parrafos, titulos, vinculos etc</p>
+        <p>
+            HTML sólo se encarga de darle <samp style="color:darkgreen" >estructuura</samp> a una página web
+        </p>
+        <p>
+            Es el lenguaje estandar para crear paginas web.Describe la estructura. Le indica al explorador que y como mostrarlo. Consiste de etiquetas
+            Las etiquetas indican parrafos, titulos, vinculos etc
+        </p>
         <hr>
     </section>
-        <!-- No sé para que puse las estiquetas de section -->
+        
+    <!-- Párrafos -->
     <section>
         <p>
             Este texto es mucho más largo
@@ -30,9 +39,14 @@
         </p>
         <a href="https://www.twitch.tv" target="_blank">Ir a Twitch</a>
     </section>
-    <img src="bolillo.png" width="600" height="600" />
-    <img src="E:\Mis cosas\Imágenes\Offline_screen.pmg" />
 
+    <!-- Imágenes -->
+    <section>
+        <img src="bolillo.png" width="600" height="600" />
+        <img src="E:\Mis cosas\Imágenes\Offline_screen.pmg" />
+    </section>
+
+    <!-- Formularios y botones -->
     <section>
         <form action="/formulario" method="post">
             <!-- Solicitar datos -->
@@ -43,12 +57,75 @@
             <label for="apellido">Apellido:</label>
             <input type="text" id="apellido" name="apellido" placeholder="Primer Apellido" />
             <br>
-            <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario"></textarea>
+            <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario">Este es un valor por defecto</textarea>
             <label for="comentario">Comentario</label>
             <br>
-            <input type="submit" />
-<!-- https://youtu.be/MJkdaVFHrto?t=2993 -->
+            <input value="feliz" type="submit" />
+            <br>
+            <!-- El comportamiento de este boton se asigna con la ayuda de JavaScript -->
+            <button type="button">Tipo button</button>
+            <!-- Resetea los cambios a sus valores iniciales -->
+            <button type="reset">Tipo reset</button>
+            <!-- Envía los datos a la ruta especificada en action -->
+            <button type="submit">Tipo submit</button>
         </form>
+    </section>
+
+    <!-- Listas -->
+    <section>
+        <!-- Unordered List -->
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+        <!-- Ordered List -->
+        <ol>
+            <li value="50">Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>
+                <ol>
+                    <li style="list-style-type: lower-alpha;">Subelemento 1</li>
+                    <li style="list-style-type: lower-alpha;">Subelemento 2</li>
+                    <li style="list-style-type: lower-alpha;">Subelemento 3</li>
+                    <li style="list-style-type: lower-alpha;">Subelemento 4</li>
+                </ol>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Tablas -->
+    <section>
+        <table style="width: 500px;">
+            <!-- Etiqueta de style (CSS) agregada en head -->
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hola beats</td>
+                    <td>Gratis</td>
+                </tr>
+                <tr>
+                    <td>Pokebola</td>
+                    <td>$500</td>
+                </tr>
+                <tr>
+                    <td>Magic The Gathering Deck</td>
+                    <td>$1,200</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td></td>
+                <td>Total: $20,000</td>
+            </tfoot>
+        </table>
     </section>
 </body>
 </html>
