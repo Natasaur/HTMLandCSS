@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aprendiendo HTML</title>
 </head>
 <body>
     <section>
@@ -15,7 +15,40 @@
         Le indica al explorador que y como mostrarlo
         Consiste de etiquetas
         Las etiquetas indican parrafos, titulos, vinculos etc</p>
+        <hr>
+    </section>
+        <!-- No sé para que puse las estiquetas de section -->
+    <section>
+        <p>
+            Este texto es mucho más largo
+            <span style="color:green">y es para</span>
+            <!-- La etiqueta de span se utiliza para 
+            darle un formato diferente al
+            texto que contiene -->
+            <br>
+            la etiqueta de span.
+        </p>
+        <a href="https://www.twitch.tv" target="_blank">Ir a Twitch</a>
+    </section>
+    <img src="bolillo.png" width="600" height="600" />
+    <img src="E:\Mis cosas\Imágenes\Offline_screen.pmg" />
 
+    <section>
+        <form action="/formulario" method="post">
+            <!-- Solicitar datos -->
+            <!-- [Línea 41] Type da el tipo de dato -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombres" />
+            <hr>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Primer Apellido" />
+            <br>
+            <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario"></textarea>
+            <label for="comentario">Comentario</label>
+            <br>
+            <input type="submit" />
+<!-- https://youtu.be/MJkdaVFHrto?t=2993 -->
+        </form>
     </section>
 </body>
 </html>
