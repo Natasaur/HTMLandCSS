@@ -8,6 +8,7 @@
     color: blueviolet;
 }
 
+/* Esto selecciona las etiquetas de "párrafo" que tengan la clase de texto. */
 p.texto{
     color: darkblue;
 }
