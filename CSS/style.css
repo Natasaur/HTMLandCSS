@@ -1,28 +1,45 @@
 /* Se utiliza # para id's */
-#titulo {
+#tituloPrincipal {
+    color: white;
+    text-align: center;
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 50px;
+}
+
+/* Esto afecta a todo lo que tenga la clase de título */
+.titulo{
     color: darkgreen;
 }
 
 /* Se utiliza . para clases (class) */
+/* Esto afecta a todo lo que tenga la clase de texto */
 .texto{
-    color: blueviolet;
+    background-color: black;
+    height: 50px;
+    color: white;
+    text-align: left;
 }
 
-/* Esto selecciona las etiquetas de "párrafo" que tengan la clase de texto. */
+/* Esto selecciona las etiquetas de párrafo que tengan la clase "texto". */
 p.texto{
-    color: darkblue;
+    color: lightblue;
 }
 
+/* Esto selecciona las etiquetas de párrafo que contengan la clase "especial". */
 p.especial{
     color: orange;
 }
 
+/* Esto afecta a las etiquetas de párrafo que se encuentren dentro de un div */
 div p {
-    color: aquamarine;
+    color: gray;
 }
 
+/* Esto afecta a las etiquetas de h2 y h3 que se encuentren dentro de un div */
 div h2, div h3 {
-    color: brown;
+    color: #7F1E57;
+    border-style: dashed;
+    border-color: #7F1E57;
 }
 
 /**{
@@ -32,6 +49,8 @@ div h2, div h3 {
 .color {
     color: #888
 }*/
+
+/* Esto afecta a todo lo que tenga la clase "color" */
 .color {
     /* border: 5px black double; */
     /*
@@ -48,21 +67,26 @@ div h2, div h3 {
         none
         hidden
     */
+    background-color: green;
     border-style: solid;
-    border-color: coral;
+    border-color: black;
     border-radius: 10px;
     border-width: 5px;
 }
 
+/* Esto afecta a todo lo que tenga el id de "fondo" */
 #fondo {
-    /* background-color: rgba(0,0,0,0.1); */
-    height: 500px;
-    background-image: url('E:\\Mis cosas\\VS Code\\HTMLandCSS\\img\\Offline_screen.png');
-    background-size: cover;
+    /* background-color: lightgreen; */
+    /*background-image: url('E:\\Mis cosas\\VS Code\\HTMLandCSS\\img\\Offline_screen.png');*/
+    height: 200px;
+    background-color: green;
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: center top;
-}
+} 
 
+
+/* Esto afecta todo lo que tenga la clase de "margen" */
 .margen {
     background-color: chocolate;
     margin: 20px;
@@ -74,29 +98,96 @@ div h2, div h3 {
     outline: 3px solid black;
 }
 
-.text{
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    text-decoration: line-through;
-    text-shadow: 3px 5px 5px blue;
-}
-
+/* LINKS */
 /* Cuando el link no ha sido visitado */
 a:link{
-    color: blueviolet;
+    color: bluegray;
 }
 
 /* Links que ya han sido visitados */
 a:visited {
-    color: gray;
+    color: darkblue;
 }
 
 /* Cuando se pasa el cursor por encima */
 a:hover{
-    color: yellow;
+    color: orange;
 }
 /* Cuando se da click en el link */
 a:active {
     color: red;
 }
-/* Esto es un comentario */
+
+/* LISTAS */
+
+ul {
+    background-color: cyan;
+    list-style-type: georgian;
+    /*padding-left: 0;*/
+    /*list-style-position: inside;*/
+}
+
+/* TABLAS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: solid 1px;
+    padding: 5px;
+}
+
+th {
+    background-color: darkgreen;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+/* DISPLAY */
+span {
+    display: block; /* Agrega la característica de los div. El elemento abarca todo el ancho de pantalla. */
+    max-width: 1000px;
+    background-color: lightblue;
+}
+
+.inline {
+    display: inline; /* Agrega la característica de los span. El elemento abarca solamente el ancho del texto contenido. */
+}
+
+/* Posicion de elementos en distintas oartes de la pantalla. */
+#position {
+    position: fixed; /* Con fixed, el elemento se queda en la parte de top cuando se hace scroll hacia abajo. */
+    left: 250px;
+    top: 100px;    
+}
+
+.left {
+    float: left; /* Esta propiedad hace flotar al elemento al lado izquierdo de la pantalla. */
+    width: 200px;
+    height: 200px;
+}
+
+.right {
+    float: right;
+    
+}
+
+.container {
+    height: 300px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 15px;
+}
