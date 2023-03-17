@@ -1,0 +1,8 @@
+.display-mini {
+    display: inherit !important;
+}
+
+body {
+    font-size: 1.2em;
+    width: 100%;
+}
